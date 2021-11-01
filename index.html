@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kwitter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   
+  .row.content {height: fit-content}
+  .sidenav {
+      padding-top: 20px;
+      background-color:white;
+      height: fit-content;
+	
+    }
+	#div1{
+		color: black;
+		background-color: white;
+	}
+	
+	footer {
+      background-color: white;
+      color: black;
+      padding: 15px;
+    }
+     @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:fit-content;} 
+    }
+  </style>
+</head>
+<body>
+<div id="link" class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://www.google.com/logos/2010/pacman10-i.html">PacMan</a></p>
+      <p><a href="https://studio.code.org/projects/artist/NjvOYbdWhFiSNBVtjdetJQuwKq410wufmWRnVUjlJnc">Online Art</a></p>
+      <p><a href="https://studio.code.org/projects/flappy/u7KpW6Cna-gaZbPqhFAUo-Lv6B_Nv1fx97LVijYonts">Flappy Bird</a></p>
+    </div>
+    <div id="div1" class="col-sm-8 text-left"> 
+      <h1>Welcome</h1>
+      <p>Kwitter is a fun and interactive app for everyone!</p>
+      <hr>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+		<p id="p1"><a href="https://www.baskinrobbinsindia.com/">Baskin Robbins</a></p>
+      </div>
+</div>
+
+<center><footer class="container-fluid text-center">
+  <p>Enjoy!!!</p>
+</footer></center>
+<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="kwitter.js"></script>
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	<img src="logo.png" class="logo">
+		<h3 >See what is happening in the world right now</h3>
+		<h4 >Join Kwitter today</h4>
+		<div class="form-group">
+		  <label >User Name:</label>
+          <input id="user_name" type="text" placeholder="Type username" class="form-control">
+		</div>
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
+</body>
+</html>
